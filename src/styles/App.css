@@ -1,0 +1,22 @@
+body {
+    box-sizing: border-box;
+    background: #ffe3e6;
+    padding: 0;
+    margin: 0;
+}
+
+.app-wrapper {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+img{
+    border-radius: 10px;
+}
+
+button{
+    width: 120px;
+    height: 30px;
+    font-size: 20px;
+}
