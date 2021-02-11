@@ -19,4 +19,24 @@ button{
     width: 120px;
     height: 30px;
     font-size: 20px;
+    border-radius: 5px;
 }
+
+button:hover {
+    background: #ffe3e6;
+}
+
+
+.content-wrapper{
+    box-sizing: border-box;
+    padding: 10px;
+    display: block;
+    float: right;
+    width: 75%;
+    background: blue;
+}
+
+.content-wrapper img{
+    height: 200px;
+}
+

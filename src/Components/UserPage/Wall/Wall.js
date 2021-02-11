@@ -1,7 +1,5 @@
 import React from "react";
 
-import '../../styles/Content.css';
-
 const Wall = () => {
     return (
         <div className="wall">

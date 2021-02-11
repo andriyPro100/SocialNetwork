@@ -1,8 +1,6 @@
 import React from "react";
 
-import '../styles/Content.css';
-
-import avatar from "../images/avatar.jpg"
+import avatar from "../../images/avatar.jpg"
 
 const UserInformation = () => {
     return (

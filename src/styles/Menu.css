@@ -6,3 +6,26 @@
     width: 25%;
     background: red;
 }
+
+.link{
+    margin: 10px;
+}
+
+.link a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffe3e6;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.link .active_link {
+    background: rgba(10, 10, 255, 0.8);
+}
+
+.link a:hover{
+    background: rgba(10, 10, 255, 0.4);
+}
+
+
