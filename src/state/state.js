@@ -1,5 +1,7 @@
-export const ADD_POST = "User/ADD-POST"
-export const UPDATE_TEXT = "User/UPDATE-TEXT"
+export const ADD_POST = "User/ADD_POST"
+export const UPDATE_TEXT = "User/UPDATE_TEXT"
+export const SEND_MESSAGE = "Dialog/SEND_MESSAGE"
+export const UPDATE_TEXT_MESSAGE = "Dialog/UPDATE_TEXT_MESSAGE"
 
 let store = {
 
@@ -58,6 +60,7 @@ let store = {
             }
         ],
         newPostText: "",
+        newMessageText: "",
         posts: [
             {
                 id: 1,
@@ -82,20 +85,6 @@ let store = {
         console.log("state changed")
     },
 
-    addPost() {
-        let newPost = {
-            id: this._state.posts.length+1,
-            message: this._state.newPostText
-        }
-        this._state.posts.push(newPost)
-        this._state.newPostText = ""
-        this._callSubscriber(this._state)
-    },
-    updateNewPostText(newText){
-        this._state.newPostText = newText
-        this._callSubscriber(this._state)
-    },
-
     dispatch(action){
         if (action.type === ADD_POST){
             let newPost = {
@@ -104,11 +93,16 @@ let store = {
             }
             this._state.posts.push(newPost)
             this._state.newPostText = ""
-            this._callSubscriber(this._state)
         }else if (action.type === UPDATE_TEXT){
             this._state.newPostText = action.text
-            this._callSubscriber(this._state)
+        }else if (action.type === UPDATE_TEXT_MESSAGE){
+            this._state.newMessageText = action.text
+        }else if (action.type === SEND_MESSAGE){
+            this._state.messages[0].message.push(this._state.newMessageText)
+            this._state.newMessageText = ""
         }
+
+        this._callSubscriber(this._state)
     }
 }
 export default store

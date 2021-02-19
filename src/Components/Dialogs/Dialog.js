@@ -1,6 +1,8 @@
 import React from "react";
 
 import "../../styles/Dialog.css"
+import MessageForm from "./MessageForm";
+
 
 function Message(props) {
     return (
@@ -11,9 +13,15 @@ function Message(props) {
 }
 
 const Dialog = (props) => {
+    debugger
     return (
         <div className="dialog">
-            {props.messages.message.map(item => <Message text={item}/>)}
+            <div className="messages">
+                {props.messages.message.map(item => <Message text={item}/>)}
+            </div>
+            <MessageForm newMessageText={props.newMessageText}
+                         dispatch={props.dispatch}
+            />
         </div>
     )
 }

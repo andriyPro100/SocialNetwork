@@ -15,7 +15,7 @@ const Wall = (props) => {
             <h2 className="wall__main_text">My posts</h2>
             <input type="text" ref={textInput} value={props.newPostText} onChange={() => updatePost()} className="wall__input"/>
             <div className="wall__button">
-                <button className="button" onClick={() => addPost()}>Send</button>
+                <button className="btn-success" onClick={() => addPost()}>Send</button>
             </div>
         </div>
     );

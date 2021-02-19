@@ -4,6 +4,11 @@
     background: sienna;
 }
 
+.messages{
+    height: 300px;
+    overflow-y: auto;
+}
+
 .dialog .message{
     display: block;
     padding: 10px;

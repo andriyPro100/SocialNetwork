@@ -1,4 +1,4 @@
-import {ADD_POST, UPDATE_TEXT} from "./state";
+import {ADD_POST, SEND_MESSAGE, UPDATE_TEXT, UPDATE_TEXT_MESSAGE} from "./state";
 
 export const updatePostActionCreator = (value) => {
     return (
@@ -8,5 +8,16 @@ export const updatePostActionCreator = (value) => {
 export const addPostActionCreator = () => {
     return (
         {type: ADD_POST}
+    )
+}
+
+export const sendMessageActionCreator = () => {
+    return (
+        {type: SEND_MESSAGE}
+    )
+}
+export const updateTextMessageActionCreator = (value) => {
+    return (
+        {type: UPDATE_TEXT_MESSAGE, text: value}
     )
 }
