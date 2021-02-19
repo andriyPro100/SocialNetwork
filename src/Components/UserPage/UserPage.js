@@ -7,17 +7,18 @@ import Wall from "./Wall/Wall";
 import Posts from "./Wall/Posts";
 import UserInformation from "./UserInformation";
 
-const Content = () => {
+const UserPage = (props) => {
+    const posts = props.posts
     return (
-        <div>
+        <div className="userPage-wrapper">
             <div className="head__img">
                 <img src={head_logo} alt=""/>
             </div>
             <UserInformation/>
-            <Wall/>
-            <Posts/>
+            <Wall newPostText={props.newPostText} dispatch={props.dispatch}/>
+            <Posts posts={posts}/>
         </div>
     );
 }
 
-export default Content
+export default UserPage

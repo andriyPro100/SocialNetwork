@@ -1,11 +1,21 @@
 import React from "react";
 
-const Dialog = () => {
-    return (
-        <div className="dialogs">
+import "../../styles/Dialog.css"
 
+function Message(props) {
+    return (
+        <div className="message">
+            {props.text}
         </div>
     )
 }
 
-export default Dialog
+const Dialog = (props) => {
+    return (
+        <div className="dialog">
+            {props.messages.message.map(item => <Message text={item}/>)}
+        </div>
+    )
+}
+
+export default Dialog;

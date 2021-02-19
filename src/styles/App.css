@@ -1,6 +1,6 @@
 body {
     box-sizing: border-box;
-    background: #ffe3e6;
+    background: white;
     padding: 0;
     margin: 0;
 }
@@ -29,11 +29,10 @@ button:hover {
 
 .content-wrapper{
     box-sizing: border-box;
-    padding: 10px;
     display: block;
     float: right;
     width: 75%;
-    background: blue;
+    background: white;
 }
 
 .content-wrapper img{

@@ -1,0 +1,10 @@
+.dialog{
+    float: right;
+    width: 50%;
+    background: sienna;
+}
+
+.dialog .message{
+    display: block;
+    padding: 10px;
+}

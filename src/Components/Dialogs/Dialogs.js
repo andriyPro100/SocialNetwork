@@ -2,15 +2,16 @@ import React from "react";
 import ListDialogs from "./ListDialogs";
 import Dialog from "./Dialog";
 
-const friends = {
+const Dialogs = (props) => {
 
-}
+    const friends = props.friends
 
-const Dialogs = () => {
+    const messages = props.messages
+
     return (
         <div className="dialogs">
-            <ListDialogs/>
-            <Dialog/>
+            <ListDialogs friends={friends} messages={messages}/>
+            <Dialog messages={messages[0]}/>
         </div>
     )
 }
