@@ -7,6 +7,7 @@ import Menu from "./Components/Menu";
 import {BrowserRouter, Route} from "react-router-dom";
 import {DialogContainer} from "./container/dialogs_container";
 import {UserPageContainer} from "./container/userPage_container";
+import {FriendsContainer} from "./container/friends_container";
 
 const App = () => {
         return (
@@ -17,6 +18,7 @@ const App = () => {
                         <div className="content-wrapper">
                                 <Route exact path="/main" render={() => <UserPageContainer/>}/>
                                 <Route path="/dialogs" render={() => <DialogContainer/>}/>
+                                <Route path="/friends" render={() => <FriendsContainer/>}/>
                         </div>
                 </div>
         </BrowserRouter>

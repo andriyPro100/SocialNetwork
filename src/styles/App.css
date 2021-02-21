@@ -15,16 +15,16 @@ img{
     border-radius: 10px;
 }
 
-button{
-    width: 120px;
-    height: 30px;
-    font-size: 20px;
-    border-radius: 5px;
-}
+/*button{*/
+/*    width: 120px;*/
+/*    height: 30px;*/
+/*    font-size: 20px;*/
+/*    border-radius: 5px;*/
+/*}*/
 
-button:hover {
-    background: #ffe3e6;
-}
+/*button:hover {*/
+/*    background: #ffe3e6;*/
+/*}*/
 
 
 .content-wrapper{

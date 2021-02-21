@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import '../styles/Menu.css';
 import {NavLink} from "react-router-dom";
@@ -12,6 +12,9 @@ const Menu = () => {
             </div>
             <div className="link">
                 <NavLink to="/dialogs" activeClassName="active_link">Dialogs</NavLink>
+            </div>
+            <div className="link">
+                <NavLink to="/friends" activeClassName="active_link">Friends</NavLink>
             </div>
 
         </nav>

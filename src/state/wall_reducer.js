@@ -39,3 +39,15 @@ export const wallReducer = (state=initial_state, action) => {
     }
 
 }
+
+export const updatePostActionCreator = (value) => {
+    return (
+        {type: UPDATE_TEXT, text: value}
+    )
+}
+export const addPostActionCreator = () => {
+    return (
+        {type: ADD_POST}
+    )
+}
+

@@ -1,6 +1,6 @@
 import {connect} from "react-redux";
-import {addPostActionCreator, updatePostActionCreator, updateTextMessageActionCreator} from "../state/actions";
 import UserPage from "../Components/UserPage/UserPage";
+import {addPostActionCreator, updatePostActionCreator} from "../state/wall_reducer";
 
 const mapStateToProps = (state) => {
     return (

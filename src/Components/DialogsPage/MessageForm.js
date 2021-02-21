@@ -12,7 +12,7 @@ const MessageForm = (props) => {
         <div className="wall">
             <input type="text" ref={textInput} value={props.newMessageText} onChange={() => updateTextMessage()} className="wall__input"/>
             <div className="wall__button">
-                <button className="btn-success" onClick={() => sendMessage()}>Send</button>
+                <button className="btn btn-info" onClick={() => sendMessage()}>Send</button>
             </div>
         </div>
     );

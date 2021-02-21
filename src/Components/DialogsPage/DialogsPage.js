@@ -2,7 +2,7 @@ import React from "react";
 import ListDialogs from "./ListDialogs";
 import Dialog from "./Dialog";
 
-const Dialogs = (props) => {
+const DialogsPage = (props) => {
     return (
         <div className="dialogs">
             <ListDialogs friends={props.friends}
@@ -15,4 +15,4 @@ const Dialogs = (props) => {
     )
 }
 
-export default Dialogs
+export default DialogsPage
