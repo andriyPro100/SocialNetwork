@@ -6,26 +6,13 @@ body {
 }
 
 .app-wrapper {
-    width: 100%;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 img{
     border-radius: 10px;
 }
-
-/*button{*/
-/*    width: 120px;*/
-/*    height: 30px;*/
-/*    font-size: 20px;*/
-/*    border-radius: 5px;*/
-/*}*/
-
-/*button:hover {*/
-/*    background: #ffe3e6;*/
-/*}*/
-
 
 .content-wrapper{
     box-sizing: border-box;
@@ -34,8 +21,3 @@ img{
     width: 75%;
     background: white;
 }
-
-.content-wrapper img{
-    height: 200px;
-}
-

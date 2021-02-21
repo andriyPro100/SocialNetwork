@@ -14,8 +14,12 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return (
         {
-            addFriend: dispatch(addFriendCreator()),
-            removeFriend: dispatch(removeFriendCreator()),
+            addFriend: (id) => {
+                dispatch(addFriendCreator(id))
+            },
+            removeFriend: (id) => {
+                dispatch(removeFriendCreator(id))
+            },
         }
     )
 }

@@ -13,20 +13,23 @@ export const friendsReducer = (state=initial_state, action) => {
 
     switch (action.type){
         case ADD_TO_FRIENDS:
-            return {
-                ...state,
-                users: state.users.map(user => {
-                    if (user.id === action.userId)
-                        return {...user, isFriend: true}
-                    return user
-                })
-            }
-        case REMOVE_FROM_FRIENDS:
+            debugger
             return {
                 ...state,
                 users: state.users.map(user => {
                     if (user.id === action.userId)
                         return {...user, isFriend: false}
+                    debugger
+                    return user
+                })
+            }
+        case REMOVE_FROM_FRIENDS:
+            debugger
+            return {
+                ...state,
+                users: state.users.map(user => {
+                    if (user.id === action.userId)
+                        return {...user, isFriend: true}
                     return user
                 })
             }
