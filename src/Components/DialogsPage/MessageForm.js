@@ -1,14 +1,12 @@
 import React from "react";
-import {sendMessageActionCreator, updateTextMessageActionCreator} from "../../state/actions";
 
 const MessageForm = (props) => {
     let textInput = React.createRef()
     const updateTextMessage = () => {
-        let value = textInput.current.value
-        props.dispatch(updateTextMessageActionCreator(value))
+        props.updateTextMessage(textInput.current.value)
     }
     let sendMessage = () => {
-        props.dispatch(sendMessageActionCreator())
+        props.sendMessage()
     }
     return (
         <div className="wall">

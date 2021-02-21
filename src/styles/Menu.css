@@ -5,6 +5,7 @@
     float: left;
     width: 25%;
     background: #cedcff;
+    min-height: 600px;
 }
 
 .link{

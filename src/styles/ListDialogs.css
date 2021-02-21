@@ -1,9 +1,9 @@
 .list_dialogs {
-    width: 48%;
+    width: 45%;
     background: #e0e9ff;
     display: inline-block;
     float: left;
-    margin: 2px;
+
 }
 
 .item_dialog{

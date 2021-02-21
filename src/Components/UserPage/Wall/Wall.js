@@ -1,14 +1,13 @@
 import React from "react";
-import {addPostActionCreator, updatePostActionCreator} from "../../../state/actions";
 
 const Wall = (props) => {
     let textInput = React.createRef()
     const updatePost = () => {
         let value = textInput.current.value
-        props.dispatch(updatePostActionCreator(value))
+        props.updatePostText(value)
     }
     let addPost = () => {
-        props.dispatch(addPostActionCreator())
+        props.addPost()
     }
     return (
         <div className="wall">

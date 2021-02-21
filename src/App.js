@@ -5,32 +5,21 @@ import './styles/App.css';
 import Header from "./Components/Header";
 import Menu from "./Components/Menu";
 import {BrowserRouter, Route} from "react-router-dom";
-import UserPage from "./Components/UserPage/UserPage";
-import Dialogs from "./Components/Dialogs/Dialogs";
+import {DialogContainer} from "./container/dialogs_container";
+import {UserPageContainer} from "./container/userPage_container";
 
-const App = (props) => {
-        debugger
+const App = () => {
         return (
-            <BrowserRouter>
+        <BrowserRouter>
                 <div className='app-wrapper'>
                         <Header/>
                         <Menu/>
                         <div className="content-wrapper">
-                                <Route exact path="/main" render={() =>
-                                    <UserPage newPostText={props.state.newPostText}
-                                              posts={props.state.posts}
-                                              dispatch={props.dispatch.bind(props.store)}
-                                />}/>
-                                <Route path="/dialogs" render={() =>
-                                    <Dialogs friends={props.state.friends}
-                                             messages={props.state.messages}
-                                             newMessageText={props.state.newMessageText}
-                                             dispatch={props.dispatch.bind(props.store)}
-                                    />}/>
+                                <Route exact path="/main" render={() => <UserPageContainer/>}/>
+                                <Route path="/dialogs" render={() => <DialogContainer/>}/>
                         </div>
                 </div>
-            </BrowserRouter>
-
+        </BrowserRouter>
         );
 }
 

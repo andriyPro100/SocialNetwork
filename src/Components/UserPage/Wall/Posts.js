@@ -3,14 +3,11 @@ import React from "react";
 import Post from "./Post";
 
 
-const Posts = (props) => {
-
-    const posts = props.posts
-    debugger
+const Posts = ({posts}) => {
 
     return (
         <div className="posts-wrapper">
-            {posts.map(item => <Post text={item.message}/>)}
+            {posts.map(item => <Post key={item.id} text={item.message}/>)}
         </div>
     );
 }

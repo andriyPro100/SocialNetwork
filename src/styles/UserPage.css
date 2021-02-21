@@ -10,6 +10,9 @@
 
 .content img{
     width: 200px;
+    margin-left: 40px;
+    margin-top: 10px;
+    height: 180px;
     border: black 1px solid;
 }
 
@@ -21,7 +24,7 @@
     display: inline-block;
     position: absolute;
     top:0;
-    left: 220px;
+    left: 250px;
 }
 
 .wall{
